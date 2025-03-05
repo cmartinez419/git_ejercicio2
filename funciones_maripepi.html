@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="display"></div>
+
+    <input type="button" value="Poner A" onclick="pa()">
+    <input type="button" value="Poner 7" onclick="p7()">
+    <input type="button" value="Hacer verde" onclick="pv()">
+    <input type="button" value="Hacer rojo" onclick="pr()">
+    <input type="button" value="Borrar" onclick="pw()">
+    <script>
+        const display = document.getElementById('display')
+        function pa() {
+            display.innerHTML += 'A'
+        }
+        function p7() {
+            display.innerHTML += '7'
+        }
+        function pg() {
+            display.style.backgroundColor = 'green'
+        }
+        function pr() {
+            display.style.backgroundColor = 'red'
+        }
+        function pw() {
+            display.innerHTML = ''
+            display.style.backgroundColor = 'white'
+        }
+    </script>
+</body>
+</html>
